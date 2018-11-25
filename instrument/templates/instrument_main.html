@@ -1,0 +1,44 @@
+{% extends "main_base.html" %}
+{% load static %}
+{% block content %}
+<div class="container">
+    
+        {% comment %} menu {% endcomment %}
+        <div class="row">
+            {% for ig in groups %}
+                
+                    <div >
+                        <button class="btn btn-info border-dark p-2 m-2 flex-grow-1" style="width: 8rem; height: 5rem" onClick=getContent({{ig.id}})>
+                            <span style="font-size:large;">
+                                {{ig.name}}
+                            </span>
+                        </button>
+                    </div>
+              
+            {% endfor%}
+        </div>
+        {% comment %} content {% endcomment %}
+        <div id="instrument_content" class="col-10">
+           
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $("img").hover(function () {
+            $("img").css('cursor', 'pointer');
+        }, function () {
+            $("img").css('cursor', 'default');
+        });
+    });
+
+    function getContent(id) {
+        $.get("{% url 'instrument_group' %}", function( data ) {
+            $( "#instrument_content" ).html( data );
+           
+        });
+    }
+</script>
+
+{% endblock  %}

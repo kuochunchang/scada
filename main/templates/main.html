@@ -1,0 +1,29 @@
+{% extends "main_base.html" %}
+
+{% block content %}
+<div class="container bg-light">
+  <div class="row">
+  {% for sysfun in system_funtions %}
+    <div class="col-lg-4 col-md-6 col-sd-12">
+      <button class="btn btn-info border-dark p-2 m-2 flex-grow-1" style="width: 18rem; height: 10rem" onClick=goto()>
+      <span style="font-size:xx-large;">
+        {{sysfun.name}}
+      </span>
+      </button>
+    </div>
+  {% endfor %}
+  </div>
+</div>
+<script>
+    $(document).ready(function () {
+        
+    });
+
+    function goto() {
+        
+        window.location = "{% url 'instrument_main' %}";
+           
+    };
+    
+</script>
+{% endblock %}

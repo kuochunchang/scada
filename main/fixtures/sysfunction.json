@@ -1,0 +1,50 @@
+[
+    {
+        "model": "main.SysFunction",
+        "fields": {
+            "id": "FIELD_INSTRUMENT",
+            "name": "儀表監控",
+            "sequence": 1
+        }
+    },
+    {
+        "model": "main.SysFunction",
+        "fields": {
+            "id": "ADMIN",
+            "name": "系統管理",
+            "sequence": 9
+        }
+    },
+    {
+        "model": "main.SysFunction",
+        "fields": {
+            "id": "DEMAND_RESPONSE",
+            "name": "需量管理",
+            "sequence": 2
+        }
+    },
+    {
+        "model": "main.SysFunction",
+        "fields": {
+            "id": "ALARM",
+            "name": "告警管理",
+            "sequence": 4
+        }
+    },    
+    {
+        "model": "main.SysFunction",
+        "fields": {
+            "id": "CONTROL",
+            "name": "智能控制",
+            "sequence": 5
+        }
+    },  
+    {
+        "model": "main.SysFunction",
+        "fields": {
+            "id": "REPORT",
+            "name": "報表",
+            "sequence": 6
+        }
+    }    
+]

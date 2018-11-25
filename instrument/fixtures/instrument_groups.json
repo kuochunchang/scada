@@ -1,0 +1,30 @@
+[
+    {
+        "model": "instrument.InstrumentGroup",
+        "fields": {
+            "name": "601 機房",
+            "sequence": 1
+        }
+    },
+    {
+        "model": "instrument.InstrumentGroup",
+        "fields": {
+            "name": "602 機房",
+            "sequence": 2
+        }
+    },
+    {
+        "model": "instrument.InstrumentGroup",
+        "fields": {
+            "name": "701 機房",
+            "sequence": 4
+        }
+    },    
+    {
+        "model": "instrument.InstrumentGroup",
+        "fields": {
+            "name": "冰水主機 1",
+            "sequence": 5
+        }
+    }
+]
